@@ -1,4 +1,4 @@
-class < ApplicationRecord
+class Post < ApplicationRecord
   include ApplicationHelper
 
   belongs_to :user
