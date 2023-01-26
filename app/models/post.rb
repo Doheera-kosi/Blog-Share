@@ -1,15 +1,13 @@
 class Post < ApplicationRecord
-  include ApplicationHelper
+  has_many :likes, foreign_key: 'posts_id'
+  has_many :comments, foreign_key: 'posts_id'
+  belongs_to :author, class_name: 'User', dependent: :destroy, foreign_key: 'author_id'
 
-  belongs_to :user
-  has_many :likes
-  has_many :comments
-
-  def recent_comments
-    comments.limit(5).order(created_at: :desc)
+  def update_posts_couter
+    author.increment!(:posts_counter)
   end
 
-  def update_posts_counter
-    user.increment!(:Posts_Counter)
+  def last_five_comments
+    comments.last(5)
   end
 end
