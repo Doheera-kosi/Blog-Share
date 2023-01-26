@@ -7,5 +7,3 @@ class User < ApplicationRecord
     posts.last(3)
   end
 end
-
-app/models/
