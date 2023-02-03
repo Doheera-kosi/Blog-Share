@@ -8,37 +8,3 @@
   </div>
   <% end %>
 </section>
-
-<%# 
-first_user = User.create(name: 'Tom', photo: 'https://img.freepik.com/free-photo/bicycle-basket-with-flowers-books-high-angle_23-2149739959.jpg', bio: 'Teacher from Mexico.')
-second_user = User.create(name: 'Lilly', photo: 'https://img.freepik.com/free-photo/bicycle-basket-with-flowers-books-high-angle_23-2149739959.jpg', bio: 'Teacher from Poland.')
-third_user = User.create(name: 'Kevin', photo: 'https://img.freepik.com/free-photo/bicycle-basket-with-flowers-books-high-angle_23-2149739959.jpg', bio: 'Developer from Ghana.')
-fourth_user = User.create(name: 'James', photo: 'https://img.freepik.com/free-photo/bicycle-basket-with-flowers-books-high-angle_23-2149739959.jpg', bio: 'farmer from Pakistan.')
-
-
-
-first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
-second_post = Post.create(author: second_user, title: 'Hello', text: 'This is my second post')
-third_post = Post.create(author: third_user, title: 'Hello', text: 'This is my first post')
-fourth_post = Post.create(author: fourth_user, title: 'Hello', text: 'This is my first post')
-
-third_post = Post.create(author: third_user, title: 'Hello', text: 'This is my another post')
-fourth_post = Post.create(author: fourth_user, title: 'Hi', text: 'This is my post')
-
-
-Comment.create(post: first_post, author: second_user, text: 'Hi Tom!' )
-Comment.create(post: first_post, author: second_user, text: 'Hi Tom!' )
-
-Comment.create(post: second_post, author: third_user, text: 'Hi Lilly!' )
-Comment.create(post: second_post, author: third_user, text: 'Hi Lilly!' )
-
-**
-Comment.create(post: fourth_post, author: first_user, text: 'Hi James!' )
-Comment.create(post: fourth_post, author: first_user, text: 'Hi James!' )
-
-Comment.create(post: fourth_post, author: first_user, text: 'Hey James!' )
-Comment.create(post: fourth_post, author: first_user, text: 'Hi James!' )
-**
-
-Comment.create(post: third_post, author: fourth_user, text: 'Hi Kevin!' )
-Comment.create(post: third_post, author: fourth_user, text: 'Hi Kevin!' ) %>
