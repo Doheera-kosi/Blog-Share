@@ -1,11 +1,13 @@
-# posts_counter
 class PostsController < ApplicationController
   def index
-    author_id = params[:id]
-    @posts = Post.where(author_id == :AuthorId)
+    @user = User.includes(:posts).find(params[:user_id])
+    # @posts = Post.where(user_id: @user.id)
   end
 
   def show
-    puts 'Under construction...!'
+    @user = User.find(params[:user_id])
+    @posts = Post.where(params[:id])
+    # @comments = Comment.where(post_id: params[:id])
+    @post = Post.find(params[:id])
   end
 end
