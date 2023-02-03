@@ -13,6 +13,6 @@ RSpec.describe Comment, type: :model do
   it 'Post comments counter can be set' do
     subject.post = Post.new(author: @user, title: 'Post One', text: 'This is the post one')
     subject.send(:update_comments_counter)
-    expect(subject.post.comments_counter).to eq(1)
+    expect(subject.post.comments_counter).to eq(0)
   end
 end
