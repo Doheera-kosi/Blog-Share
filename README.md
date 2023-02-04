@@ -31,7 +31,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://https://rubyonrails.org//">Rails</a></li>
+    <li><a href="https://rubyonrails.org//">Rails</a></li>
   </ul>
 </details>
 
